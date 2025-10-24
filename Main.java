@@ -1,10 +1,5 @@
 // Main.java
 // Compare BLIND vs AWARE models with either top-K or cutoff admission.
-// Build & run:
-//   javac Applicant.java Admissions.java Main.java
-//   java Main                     // defaults: K = 120 (top-K)
-//   java Main --k=150             // pick top 150 by score
-//   java Main --cutoff=0.82       // use a fixed score cutoff instead of top-K
 
 import java.io.*;
 import java.util.*;
@@ -13,7 +8,7 @@ import java.util.stream.Collectors;
 
 public class Main {
 
-    // ---------- CSV parsing (keeps your behavior: Yes/No booleans, $ in income) ----------
+
     private static String[] parseCSVLine(String line) {
         List<String> out = new ArrayList<>();
         StringBuilder sb = new StringBuilder();
